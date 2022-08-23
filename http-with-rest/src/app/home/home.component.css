@@ -1,0 +1,8 @@
+.bg {
+  background-color: gray;
+}
+mat-card{
+  width: 70%;
+  margin: 10px 15% 10px 15%;
+  padding: 20px;
+}

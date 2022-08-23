@@ -1,0 +1,16 @@
+<div class="container-fluid bg" fxLayout="column" fxLayoutGap="20px">
+  <mat-card *ngFor="let article of articles" fxFlex class="container-fluid" >
+    <mat-card-header>
+    <mat-card-title>{{article.title}}</mat-card-title>
+    <mat-card-subtitle>Published: {{article.published_at}} / Keywords: {{article.keywords}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{article.description}}</p>
+      <img  style="width:50%; height: 50%; display: block;
+      margin-left: auto;
+      margin-right: auto;" src="{{article.image_url}}" alt="{{article.image_url}}"/>
+    </mat-card-content>
+    <mat-card-actions>
+      <a mat-button href="{{article.url}}" target="_blank">Read full article</a>
+    </mat-card-actions>
+  </mat-card>
